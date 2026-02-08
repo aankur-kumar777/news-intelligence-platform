@@ -13,7 +13,7 @@ A compact, production-ready Django project that focuses on news ingestion, sourc
 ## ✨ Key highlights
 
 * Enterprise-focused news intelligence platform
-* AI-ready architecture for summarization, personalization & trends
+* AI architecture for summarization, personalization & trends
 * Automated news ingestion via Django management command
 * User & company-aware story tracking
 * Multi-source monitoring with configurable sources
@@ -71,8 +71,6 @@ news/
     ├── signup_style.css
     └── ...
 ```
-
-> Note: Your project already contains a mature migrations history and a management command (`update_stories`) — ideal hooks for scheduled ingestion and AI pipelines.
 
 ---
 
@@ -161,7 +159,7 @@ This management command is the place where your ingestion, deduplication, and (f
 
 ---
 
-## 🌱 Suggested roadmap (next features)
+## 🌱 features
 
 1. **AI Summarization** — run LLM inference in `update_stories` and persist concise summaries.
 2. **Entity Extraction & Tagging** — store companies, people, locations to enable filtering.
@@ -172,9 +170,3 @@ This management command is the place where your ingestion, deduplication, and (f
 
 ---
 
-## 🧩 Tips for contributors
-
-* Follow PEP8 and use `black` for formatting.
-* Add tests under `news/tests.py` or `news/tests/` per feature.
-* Write migrations when changing models and include a short note in commit messages.
-* Keep template logic minimal — prefer view/context processing.
